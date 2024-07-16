@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reto_01</string>
+    <string name="link_registro">
+         <a href="registro_Activity"> Regístrate </a>
+
+
+    </string>
+    <string name="link_restrablecer_contraseña">
+        <a href="Retablecer_contraseña"> ¿Ovidaste tu contraseña?</a>
+
+    </string>
+
+</resources>

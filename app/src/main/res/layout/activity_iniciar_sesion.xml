@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".iniciar_sesion_Activity">
+
+    <ImageView
+        android:id="@+id/Img_logo_iniciar_sesión"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/Linear_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Img_logo_iniciar_sesión">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user_avatar" />
+
+        <EditText
+            android:id="@+id/Edt_User"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/boder_style_editext"
+            android:backgroundTint="@color/white"
+            android:hint="Example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linear_user">
+
+        <ImageView
+            android:id="@+id/Edt_password_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/password" />
+
+        <EditText
+            android:id="@+id/Edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/boder_style_editext"
+            android:backgroundTint="@color/white"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_iniciar_sesión"
+        android:layout_width="281dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/green_button"
+        android:fontFamily="@font/prosto_one"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linear_password"/>
+
+    <TextView
+        android:id="@+id/Txt_olvisate_tu_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/link_restrablecer_contraseña"
+        android:fontFamily="@font/prosto_one"
+        android:textColorLink="@color/blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Btn_iniciar_sesión"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

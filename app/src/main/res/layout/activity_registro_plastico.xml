@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro_plastico_Activity"
+    android:background="@drawable/fondo2">
+
+    <LinearLayout
+        android:id="@+id/Linear_registro_plastico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <ImageButton
+        android:id="@+id/Icono_papel_2_registro_plastico"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icono_papel_2"
+        android:contentDescription="registro papel"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/Icono_plastico_1_registro_plastico"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icono_plastico_1"
+        android:contentDescription="registro plastrico"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/Icono_vidrio_2_registro_plastico"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icono_vidrio_2"
+        android:contentDescription="registro vidrio"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id="@+id/Icono_carton_2_registro_plastico"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/icono_carton_2"
+        android:contentDescription="registro carton"
+        android:background="@null"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lienar_registro_plastico_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Linear_registro_plastico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Registro_peso_plastico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prosto_one"
+            android:text="Peso"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/Edt_registro_peso_plastico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/boder_style_editext"
+            android:backgroundTint="@color/white"
+            android:hint="Kg"
+            android:inputType="number"
+            android:textSize="18dp"
+            android:layout_marginStart="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_registro_precio_plastico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Lienar_registro_plastico_peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Registro_precio_plastico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prosto_one"
+            android:text="Precio"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="24dp"/>
+
+        <EditText
+            android:id="@+id/Edt_registro_precio_plastico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/boder_style_editext"
+            android:backgroundTint="@color/white"
+            android:hint="Precio por kg"
+            android:inputType="number"
+            android:textSize="18dp"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_registro_mes_plastico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/Linear_registro_precio_plastico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/Registro_mes_plastico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/prosto_one"
+            android:text="Mes"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/Spn_registro_mes_plastico"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/boder_style_editext"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_registrar_datos_categoria_plastico"
+        android:layout_width="281dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/green_button"
+        android:fontFamily="@font/prosto_one"
+        android:text="Registrar datos"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Linear_registro_mes_plastico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/Img_logo_registro_categoria_plastico"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toBottomOf="@id/Btn_registrar_datos_categoria_plastico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <ImageButton
+        android:id="@+id/Ibtn_regresar_categoria_plastico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="56dp"
+        android:background="@null"
+        android:contentDescription="regresar categoria plastico"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@id/Img_logo_registro_categoria_plastico"
+        app:layout_constraintTop_toBottomOf="@id/Btn_registrar_datos_categoria_plastico"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

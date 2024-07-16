@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".categorias_Activity">
+
+    <ImageView
+        android:id="@+id/Img_logo_categorias"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/Linear_categoria_papel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Img_logo_categorias">
+
+     <ImageView
+         android:id="@+id/Img_papel"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         android:src="@drawable/papel"/>
+
+        <ImageButton
+            android:id="@+id/Ibtn_categoria_papel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_papel"
+            android:contentDescription="categoria papel"
+            android:background="@null"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_categoria_plastico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linear_categoria_papel">
+
+    <ImageView
+        android:id="@+id/Img_plastico"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/plastrico"/>
+
+        <ImageButton
+            android:id="@+id/Ibtn_categoria_plastico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_plastico"
+            android:contentDescription="categoria plastico"
+            android:background="@null"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_categoria_vidrio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linear_categoria_plastico">
+
+        <ImageView
+            android:id="@+id/Img_vidrio"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/vidrio"/>
+
+        <ImageButton
+            android:id="@+id/Ibtn_categoria_vidrio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_vidrio"
+            android:contentDescription="categoria plastco"
+            android:background="@null"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Linear_categoria_carton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Linear_categoria_vidrio">
+
+        <ImageView
+            android:id="@+id/Img_carton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/carton"/>
+
+        <ImageButton
+            android:id="@+id/Ibtn_categoria_carton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_carton"
+            android:contentDescription="categoria carton"
+            android:background="@null"
+            android:layout_marginStart="20dp"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Ibtn_regresar_categorias"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:contentDescription="regresar"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/Linear_categoria_carton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
